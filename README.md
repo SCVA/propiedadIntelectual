@@ -1,1 +1,1 @@
-# propiedadIntelectual
+# Propiedad Intelectual
