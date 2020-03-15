@@ -1,3 +1,4 @@
+var scale = 2;
 var tiempoAp = 0;
 var tiempo = 5;
 var tamCola = 1;
@@ -433,7 +434,7 @@ function ImgInicio(){
 	
 	this.dibujar = function(ctx){
 		ctx.save();
-		ctx.drawImage(this.img,0,0,640,480);
+		ctx.drawImage(this.img,0,0,640*scale,480*scale);
 		ctx.restore();
 	}
 }
@@ -455,7 +456,7 @@ function Fondo(){
 	
 	this.dibujar = function(ctx){
 		ctx.save();
-		ctx.drawImage(this.img,0,0,640,480);
+		ctx.drawImage(this.img,0,0,640*scale,480*scale);
 		ctx.restore();
 	}
 }
@@ -488,7 +489,7 @@ function Dialogo(){
 	
 	this.dibujar = function(ctx){
 		ctx.save();
-		ctx.drawImage(this.img,70,10,500,100);
+		ctx.drawImage(this.img,70,10,500*scale,100*scale);
 		ctx.restore();
 	}
 }
@@ -521,7 +522,7 @@ function TabPuntaje(){
 	
 	this.dibujar = function(ctx,x1,y1,width,height){
 		ctx.save();
-		ctx.drawImage(this.img,x1,y1,width,height);
+		ctx.drawImage(this.img,x1*scale,y1*scale,width,height);
 		ctx.restore();
 	}
 }
@@ -533,7 +534,7 @@ function ImgEspera(){
 	this.dibujar = function(ctx){
 		this.img.src = ("imgs/"+rnd+".jpg");
 		ctx.save();
-		ctx.drawImage(this.img,105,105,430,273);
+		ctx.drawImage(this.img,105*scale,105*scale,430*scale,273*scale);
 		ctx.restore();
 	}
 	
@@ -547,10 +548,10 @@ function dibujar(){
 	if(!inicio){
 		imgInicio.dibujar(context);
 		context.fillStyle = "black";
-		cajas[0].x = 425;
-		cajas[0].y = 106;
-		cajas[0].width = 145;
-		cajas[0].height = 67;
+		cajas[0].x = 425*scale;
+		cajas[0].y = 106*scale;
+		cajas[0].width = 145*scale;
+		cajas[0].height = 67*scale;
 		context.strokeRect(cajas[0].x, cajas[0].y, cajas[0].width , cajas[0].height);
 		if(cajaPulsada!=-1){
 			inicio = true;
@@ -601,7 +602,7 @@ function dibujar(){
 		//Puntaje
 		tabPuntaje.dibujar(context,390,390,200,80);
 		context.fillStyle = "black";
-		context.fillText("Puntaje: "+puntaje,400,417);
+		context.fillText("Puntaje: "+puntaje,400*scale,405*scale);
 		//Fin puntaje
 		if(tamCola==0){
 			imgsEspera.dibujar(context);
@@ -616,13 +617,13 @@ function dibujar(){
 			dialogo.dibujar(context);
 			context.fillStyle = "black";
 			context.font = "italic 30px Times New Roman";
-			ajusteDeTexto(actual.pre,130,50,400,30);
-			context.font = "normal 30px Times New Roman";
+			ajusteDeTexto(actual.pre,130,50,400*scale,30);
+			context.font = "normal 15px Times New Roman";
 			for(i = 0; i <4; i++){
 				context.fillStyle = "green";
 				cajas[i].x = 230;
-				cajas[i].y = (70+(i+1)*60);
-				cajas[i].width = actual.op[i].length*15;
+				cajas[i].y = (70+(i+1)*60)*scale;
+				cajas[i].width = actual.op[i].length*7.5;
 				cajas[i].height = 30;
 				if((cajaPorSeleccionar!=-1)&&(i==cajaPorSeleccionar)){
 					opcionSel.dibujar(context,cajas[i].x-10, cajas[i].y-7, cajas[i].width+22 , cajas[i].height+17);
@@ -630,7 +631,7 @@ function dibujar(){
 					opcion.dibujar(context,cajas[i].x-10, cajas[i].y-7, cajas[i].width+20 , cajas[i].height+15);
 				}
 				context.fillStyle = "black";
-				context.fillText(actual.op[i],238,(93+(i+1)*60));
+				context.fillText(actual.op[i],238,(93+(i+1)*60)*scale-20);
 			}
 		}		
 	}else if(inicio){
