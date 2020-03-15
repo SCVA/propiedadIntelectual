@@ -8,3 +8,4 @@ Integrantes:
 </ol>
 
 # Como instalar y usar
+Descargar en el ordenadore y abrir el archivo index.html, disfrutar.
