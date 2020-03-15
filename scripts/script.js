@@ -31,12 +31,242 @@ function conexion(){
 	}
 }
 
-/*var bancoPreguntas = [new pregunta("¿Quien fue Tutankamón?","a. Un plomero","b. Un faraon","c. Un abogado","d. Un presidente",1,1),
-					  new pregunta("¿Como se llama el tipo que hizo el script de este juego?","a. Norbey","b. Sebastian","c. Cristian","d. Camilo",2,2),
-					  new pregunta("¿Que siginifica abyecto?","a. Preocupado","b. Hambriento","c. Sorprendido","d. Despreciable",3,3),
-					  new pregunta("¿El Anthrax es producido por?","a. Un coco","b. Un bacilo","c. Una vibria","d. Un virus",1,4),
-					  new pregunta("¿El albúm debut de metallica fue lanzado en el año?","a. 1983","b. 1990","c. 1991","d. 2000",0),5];
-*/
+var bancoPreguntas = [
+new pregunta("La protección del conocimiento ha tenido cambios significativos a partir de 1986 esto debido a :"
+	,"a. las negociaciones comerciales de la Organización Mundial del Comercio"
+	,"b. El inicio de Boom industrial."
+	,"c. Las negociaciones Reagan-Xin"
+	,"d.La ley de Protección al consumismo"
+	,0,1),
+new pregunta("Los activos intelectuales se crean cuando:"
+	,"a. Se define un estandar para la protección del conocimiento basado en regla definidas por la OMC"
+	,"b. se registra por escrito algún conocimiento que permite trasladar y socializar el conocimiento."
+	,"c. Se crea un modo de medir el beneficio intelectual de una invención."
+	,"d. El gobierno establece normativas sobre la creación de patentes."
+	,1,2),
+new pregunta("El siguiente hace parte de la propiedad intelectual:"
+	,"a.Propiedad industrial"
+	,"b.Propiedad Comercial."
+	,"c.Derechos de uso"
+	,"d.Derechos de distribución"
+	,0,3),
+new pregunta("De los siguientes cual no hace parte de la propiedad industrital:"
+	,"a. Patentes"
+	,"b. Modelos de utilidad"
+	,"c. Software"
+	,"d. Diseños industriales"
+	,2,4),
+new pregunta("De los siguientes cual no hace parte de los derechos de autor:"
+	,"a. Literarios y artísticos"
+	,"b. Obras cinematográficas"
+	,"c. Algoritmos, fórmulas"
+	,"d. Nombres y avisos comerciales"
+	,3,5),
+new pregunta("El software puede ser protegido en patentes en forma de:"
+	,"a. Soporte lógico."
+	,"b. Un dispositivo en si."
+	,"c. Un sistema."
+	,"d. Soporte físico."
+	,0,6),
+new pregunta("Para que una obra pueda ser objeto de protección a través de derechos de autor es indispensable que ésta se encuentre en forma:"
+	,"a. virtual."
+	,"b. material"
+	,"c. ambas."
+	,"d. Ninguna"
+	,1,7),
+new pregunta("El derecho de autor se basa en el principio de:"
+	,"a. declaración de verdad"
+	,"b. declaración examinada previamente"
+	,"c. declaración de legalidad"
+	,"d. ninguna de las anteriores"
+	,0,8),
+new pregunta("El primer régimen de patentes que presenta las principales características contemporáneas fue el adoptado en:"
+	,"a. Venecia"
+	,"b. Paris"
+	,"c. Roma"
+	,"d. Kansas"
+	,0,9),
+new pregunta("Mencione un ejemplo de un signo distintivo:"
+	,"a. Patente"
+	,"b. Secreto industrial"
+	,"c. Diseño industrial"
+	,"d. Nombre Comercial"
+	,3,10),	
+new pregunta("De acuerdo con “Trade Related Intellectual Property Issues” que no debe ser protegido:"
+	,"a. Las invenciones en el áerea de computación"
+	,"b. Las invenciones en el áerea de dispositivos"
+	,"c.  es falso, todo debe ser protegido."
+	,"d. métodos para terapias humanas."
+	,3,11),
+new pregunta("De los siguientes cual no es un requisito para obtener una patente:"
+	,"a. Novedad universal"
+	,"b. Grado inventivo."
+	,"c. Aplicabilidad industrial."
+	,"d. Presupuesto de producción."
+	,3,12),
+new pregunta("Son  una  forma  de  protección  exclusiva  para  variedades  vegetales. Mediante esta modalidad de la propiedad industrial, se protege el material de propagación de las plantas. La anterior definción se refiere a :"
+	,"a. Secreto industrial"
+	,"b. Patente"
+	,"c. Derecho de obtentor"
+	,"d. Derechos de autor"
+	,2,13),
+new pregunta("En la siguiente el plazo de protección no caduca:"
+	,"a. Patentes"
+	,"b. Secreto Industrial"
+	,"c. Derechos de obtentor"
+	,"d. Ninguna"
+	,1,14),
+new pregunta("En la siguiente no se debe solicitar el registro ante una entidad gubernamental:"
+	,"a. Secreto Industrial"
+	,"b. Patentes"
+	,"c. Derechos de obtentor"
+	,"d. Ninguna"
+	,0,15),
+new pregunta("Para las Bitácoras de investigación el titulo recomendado es:"
+	,"a. Patentes"
+	,"b. Derechos de obtentor"
+	,"c. Secreto Industrial"
+	,"d. Ninguna"
+	,2,16),
+new pregunta("El titulo Derechos de autor, es recomendable para:"
+	,"a. Variedades vegetales"
+	,"b. Procesos de producción"
+	,"c. Productos"
+	,"d. Modelos matemáticos"
+	,3,17),
+new pregunta("El titulo Secreto industrial, es recomendable para:"
+	,"a. Circuitos integrados"
+	,"b. Procesos de producción"
+	,"c. Procedimiento de calidad"
+	,"d. Modelos matemáticos"
+	,2,18),
+new pregunta("Si un software es protegido como soporte lógico, es probable que el producto en si este protegido por:"
+	,"a. Patentes"
+	,"b. Derechos de obtentor"
+	,"c. Secreto Industrial"
+	,"d. Ninguna"
+	,0,19),
+new pregunta("El Objeto de protección de una patente es:"
+	,"a. Invención"
+	,"b. Información que le confiera una ventaja competitiva a la empresa"
+	,"c. Variedades vegetales"
+	,"d. Ninguna"
+	,0,20),
+new pregunta("Un hito histórico de la propiedad intelectual es:"
+	,"a. Convenio de Berna para la protección de las obras literarias y artísticas."
+	,"b. Convenio de Viena para la protección de las obras literarias y artísticas."
+	,"c. Arreglo de Paris relativo al Registro Internacional de Marca."
+	,"d. Arreglo de Viena relativo al Registro Internacional de Marca."
+	,0,21),
+new pregunta("Un tipo de protección de la propiedad intelectual es:"
+	,"a. Patente de utilidad."
+	,"b. Diseños industriales."
+	,"c. Diseños de utilidad."
+	,"d. Patente de marca."
+	,1,22),
+new pregunta("Una de las 4 estrategias de patentamiento que define Archibugi y Pianta es:"
+	,"a. La patente selectiva, donde las organizaciones sólo patentan invenciones muy específicas o estratégicas."
+	,"b. El patentamiento desenfrenado, donde se recurre continuamente a la solicitud de patentes como forma de proteger sus invenciones."
+	,"c. La estrategia de bloqueo, donde se patenta con el propósito de bloquear competidores más que con el fin de introducir innovaciones."
+	,"d. El patentamiento sistemático, donde se recurre continuamente a la solicitud de patentes como forma de proteger sus invenciones."
+	,3,23),
+new pregunta("Cual es el tiempo de duración de una patente para el sistema legal de México?"
+	,"a. 5 años."
+	,"b. 20 años."
+	,"c. 15 años."
+	,"d. 30 años."
+	,1,24),
+new pregunta("Una de las razones que suelen citarse como las preponderantes en la consideración de las patentes como fuente de información tecnológica, es:"
+	,"a. El resumen o la información detallada de la invención describen específicamente la solución o la posible solución a un problema determinado."
+	,"b. La información de patentes desperdicia tiempo y facilita las labores iniciales de la investigación industrial."
+	,"c. El resumen o la información detallada de la invención describen los materiales a utilizar."
+	,"d. La información de patentes desperdicia tiempo y complica las labores iniciales de la investigación industrial."
+	,0,25),
+new pregunta("Uno de los sitios electrónicos de bancos de patentes es:"
+	,"a. Banco estadounidense de patentes."
+	,"b. Oficina mexicana de patentes."
+	,"c. Banco mexicano de patentes."
+	,"d. Banco canadiense de patentes."
+	,2,26),
+new pregunta("Una de las partes de una patente es:"
+	,"a. Conclusiones."
+	,"b. Reivindicaciones."
+	,"c. Metodología."
+	,"d. Marco teórico."
+	,1,27),
+new pregunta("Uno de los elementos que conforman la gestión de la propiedad intelectual es:"
+	,"a. Adquisición de licencias para la investigación."
+	,"b. Auditoria inventiva."
+	,"c. Selección de tecnología."
+	,"d. Licenciamiento de propiedad intelectual."
+	,0,28),
+new pregunta("Que porcentaje le corresponde a un inventor en la UNAM?"
+	,"a. 100%"
+	,"b. 50%"
+	,"c. 20%"
+	,"d. 40%"
+	,3,29),
+new pregunta("Una consideración sobre secretos industriales es:"
+	,"a. No se deben realizar ponencias ni artículos los investigadores para evitar fugas de información estratégica."
+	,"b. La información que comprenda un secreto industrial no debe estar en un soporte físico por riesgo a robo."
+	,"c. No se deben realizar ponencias ni artículos el personal administrativo para evitar fugas de información estratégica."
+	,"d. Las personas que tienen acceso a dicha información deberán firmar acuerdos de secrecía y, de preferencia, en los contratos laborales se incluirán disposiciones relativas a la confidencialidad del secreto industrial."
+	,3,30),
+new pregunta("Un hito histórico de la propiedad intelectual es:"
+	,"a. Convenio de París para la protección de la propiedad industria."
+	,"b. Convenio de París para la protección de las obras literarias y artísticas."
+	,"c. Arreglo de Madrid relativo al depósito internacional de dibujos y modelos industriales."
+	,"d. Arreglo de la Haya relativo al Registro Internacional de Marca."
+	,0,31),
+new pregunta("Un tipo de protección de la propiedad intelectual es:"
+	,"a. Patente de utilidad"
+	,"b. Secretos industriales"
+	,"c. Diseños de utilidad"
+	,"d. Patente de marca"
+	,1,32),
+new pregunta("Una de las 4 estrategias de patentamiento que define Archibugi y Pianta es:"
+	,"a. La patente selectiva, donde las organizaciones sólo patentan invenciones muy específicas o estratégicas."
+	,"b. El patentamiento desenfrenado, donde se recurre continuamente a la solicitud de patentes como forma de proteger sus invenciones."
+	,"c. La estrategia de bloqueo, donde se patenta con el propósito de bloquear competidores más que con el fin de introducir innovaciones."
+	,"d. El patentamiento de bloqueo es una estrategia en la cual se patenta con el propósito de bloquear competidores más que con el fin de introducir innovaciones."
+	,3,33),
+new pregunta("¿Cuál es el tiempo de duración de una patente para el sistema legal de Colombia?"
+	,"a. 5 años."
+	,"b. 20 años."
+	,"c. 15 años."
+	,"d. 30 años."
+	,1,34),
+new pregunta("Una de las razones que suelen citarse como las preponderantes en la consideración de las patentes como fuente de información tecnológica, es:"
+	,"a. El resumen o la información detallada de la invención permite desarrollar hipótesis respecto a las posibles tendencias del desarrollo tecnológico e industrial en cada rama, en cada producto y en cada proceso."
+	,"b. La información de patentes desperdicia tiempo y facilita las labores iniciales de la investigación industrial."
+	,"c. El resumen o la información detallada de la invención describen los materiales a utilizar."
+	,"d. La información de patentes desperdicia tiempo y complica las labores iniciales de la investigación industrial."
+	,0,35),
+new pregunta("Uno de los sitios electrónicos de bancos de patentes es:"
+	,"a. Banco estadounidense de patentes."
+	,"b. Oficina mexicana de patentes."
+	,"c. Oficina alemana de patentes."
+	,"d. Banco canadiense de patentes."
+	,2,36),
+new pregunta("Una de las partes de una patente es:"
+	,"a. Conclusiones."
+	,"b. Memoria descriptiva."
+	,"c. Metodología."
+	,"d. Marco teórico."
+	,1,37),
+new pregunta("Uno de los elementos que conforman la gestión de la propiedad intelectual es:"
+	,"a. Valuación de propiedad intelectual."
+	,"b. Auditoria inventiva."
+	,"c. Selección de tecnología."
+	,"d. Licenciamiento de propiedad intelectual."
+	,0,38),
+new pregunta("¿Qué porcentaje le corresponde a un inventor del MIT?"
+	,"a. 100%"
+	,"b. 67.4%"
+	,"c. 25%"
+	,"d. 28.3%"
+	,3,39),39];
+
 var actual = bancoPreguntas[Math.floor((Math.random() * (bancoPreguntas.length-1)))];
 var cajaPulsada = -1;
 var cajaPorSeleccionar = -1;
